@@ -57,19 +57,7 @@ class Program
                         newForm.BackColor = Color.FromArgb(20, 20, 20);
                         newForm.ForeColor = Color.White;
                     }
-                    else if (CL.Contains("Start"))
-                    {
-                        CL = CL.Replace("Start(\"", "");
-                        CL = CL.Replace("\")", "");
-                        EyeStep.open(CL);
-                    }
-                    else if (CL.Contains("makeRemote"))
-                    {
-                        CL = CL.Replace("makeRemote(", "");
-                        CL = CL.Replace(")", "");
-                        EmRemote LuaC = new EmRemote();
-                        LuaC.Load();
-                    }
+                    
                 }
                 LineCount = 0;
             }
