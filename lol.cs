@@ -8,7 +8,7 @@ class Program
     {
         Form newForm = new Form();
         Button newButton = new Button();
-        void run(string code)
+        string run(string code)
         {
             try
             {
@@ -52,4 +52,5 @@ class Program
             {
                 MessageBox.Show("failed");
             }
+            return "Worked";
         }
