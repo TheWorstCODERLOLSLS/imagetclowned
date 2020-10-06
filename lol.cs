@@ -1,4 +1,28 @@
- void run(string code)
+using System.Linq;
+using EyeStepPackage;
+using Microsoft.CSharp;
+using System;
+using System.CodeDom.Compiler;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.IO;
+using System.Net;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using RHaxx;
+
+class Program
+{
+
+    
+    public static void Main(string[] args)
+    {
+        Form newForm = new Form();
+        Button newButton = new Button();
+        void run(string code)
         {
             try
             {
@@ -30,7 +54,7 @@
                         CL = CL.Replace("\")", "");
                         newForm.Text = CL;
                         newForm.Visible = true;
-                        newForm.ShowIcon=false;
+                        newForm.ShowIcon = false;
                         newForm.BackColor = Color.FromArgb(20, 20, 20);
                         newForm.ForeColor = Color.White;
                     }
@@ -54,4 +78,4 @@
             {
                 MessageBox.Show("failed");
             }
-        }
+            run(
