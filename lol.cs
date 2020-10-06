@@ -1,22 +1,9 @@
-using System.Linq;
-using Microsoft.CSharp;
-using System;
-using System.CodeDom.Compiler;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
 
 class Program
 {
-
-    
     public static void Main(string[] args)
     {
         Form newForm = new Form();
@@ -57,7 +44,7 @@ class Program
                         newForm.BackColor = Color.FromArgb(20, 20, 20);
                         newForm.ForeColor = Color.White;
                     }
-                    
+
                 }
                 LineCount = 0;
             }
@@ -65,4 +52,3 @@ class Program
             {
                 MessageBox.Show("failed");
             }
-
