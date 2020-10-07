@@ -36,13 +36,13 @@ class Program
                 }
                 if (CL.Contains("newForm"))
                 {
-                    CL = CL.Replace("newForm(\"", "");
-                    CL = CL.Replace("\")", "");
-                    newForm.Text = CL;
-                    newForm.Visible = true;
-                    newForm.ShowIcon = false;
-                    newForm.BackColor = Color.FromArgb(20, 20, 20);
-                    newForm.ForeColor = Color.White;
+                        CL = CL.Replace("newForm(\"", "");
+                        CL = CL.Replace("\")", "");
+                        newForm.Text = CL;
+                        newForm.ShowIcon=false;
+                        newForm.BackColor = Color.FromArgb(20, 20, 20);
+                        newForm.ForeColor = Color.White;
+                        newForm.ShowDialog();
                 }
 
             }
@@ -56,3 +56,4 @@ class Program
     }
     public static void Main(string[] args)
     {
+
