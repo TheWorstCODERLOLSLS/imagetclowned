@@ -20,7 +20,7 @@ class Program
                 LineCount = LineCount + 1;
                 if (CL.Contains("newButton"))
                 {
-
+Console.Log("ETST E");
                         CL = CL.Replace("newButton(\'", "");
                         CL = CL.Replace("\')", "");
                         newButton.Text = CL;
