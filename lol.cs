@@ -20,8 +20,6 @@ class Program
                 LineCount = LineCount + 1;
                 if (CL.Contains("newButton"))
                 {
-                    if (newForm.Visible)
-                    {
                         CL = CL.Replace("newButton(\'", "");
                         CL = CL.Replace("\')", "");
                         newButton.Text = CL;
@@ -32,7 +30,6 @@ class Program
                         newButton.BackColor = Color.FromArgb(25, 25, 25);
                         newButton.ForeColor = Color.White;
                         newForm.Controls.Add(newButton);
-                    }
                 }
                 if (CL.Contains("newForm"))
                 {
