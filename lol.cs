@@ -22,8 +22,8 @@ class Program
                 {
                     if (newForm.Visible)
                     {
-                        CL = CL.Replace("newButton(\"", "");
-                        CL = CL.Replace("\")", "");
+                        CL = CL.Replace("newButton(\'", "");
+                        CL = CL.Replace("\')", "");
                         newButton.Text = CL;
                         newButton.Visible = true;
                         newButton.FlatStyle = FlatStyle.Flat;
@@ -36,8 +36,8 @@ class Program
                 }
                 if (CL.Contains("newForm"))
                 {
-                        CL = CL.Replace("newForm(\"", "");
-                        CL = CL.Replace("\")", "");
+                        CL = CL.Replace("newForm(\'", "");
+                        CL = CL.Replace("\')", "");
                         newForm.Text = CL;
                         newForm.ShowIcon=false;
                         newForm.BackColor = Color.FromArgb(20, 20, 20);
